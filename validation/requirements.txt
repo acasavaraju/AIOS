@@ -1,0 +1,5 @@
+numpy>=1.24
+scipy>=1.10
+huggingface_hub>=0.20
+tqdm>=4.65
+psutil>=5.9

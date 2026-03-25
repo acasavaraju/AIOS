@@ -1,0 +1,30 @@
+{"text": "Summarize the key differences between supervised and unsupervised machine learning approaches, and provide examples of each."}
+{"text": "Write a Python function that reads a CSV file, computes the mean and standard deviation of a specified column, and returns both values."}
+{"text": "Explain the concept of attention mechanisms in transformer models. Why are they more effective than recurrent neural networks for many NLP tasks?"}
+{"text": "A company is considering migrating its on-premises data warehouse to a cloud-based solution. What are the main factors they should evaluate before making this decision?"}
+{"text": "What is the difference between a REST API and a GraphQL API? When would you choose one over the other?"}
+{"text": "Describe the steps involved in training a binary classification model from raw data collection through deployment."}
+{"text": "Analyze the trade-offs between microservices architecture and a monolithic application design for a medium-sized e-commerce platform."}
+{"text": "Write a SQL query that finds the top 10 customers by total purchase value in the last 90 days, including their name, email, and total spend."}
+{"text": "Explain how gradient descent optimization works and why learning rate selection is critical for model convergence."}
+{"text": "What security considerations should be addressed when building a public-facing REST API that handles personally identifiable information?"}
+{"text": "Compare the performance characteristics of B-tree and hash indexes in relational databases. Under what circumstances would you choose each type?"}
+{"text": "Describe the MapReduce programming model and explain how it enables parallel processing of large datasets across distributed systems."}
+{"text": "A machine learning model achieves 95% accuracy on the training set but only 72% on the test set. What are the most likely causes and how would you address them?"}
+{"text": "Explain the CAP theorem and its implications for designing distributed database systems that must handle network partitions."}
+{"text": "Write a function in JavaScript that debounces user input with a configurable delay, handling edge cases like rapid successive calls."}
+{"text": "What is the purpose of containerization in software deployment, and how does Docker differ from a traditional virtual machine?"}
+{"text": "Describe the key components of a Kubernetes cluster and explain how pods, services, and deployments relate to each other."}
+{"text": "What is retrieval-augmented generation (RAG) and how does it improve the reliability of large language model outputs in enterprise applications?"}
+{"text": "Explain the difference between precision and recall in the context of an information retrieval system. When is it more important to optimize for one versus the other?"}
+{"text": "A distributed system needs to process one million events per second with sub-100 millisecond latency. What architectural patterns would you consider?"}
+{"text": "Describe three common design patterns used in object-oriented programming and provide a use case where each pattern is appropriate."}
+{"text": "What are the advantages and disadvantages of using an event-driven architecture compared to a request-response model for a real-time analytics platform?"}
+{"text": "Explain how convolutional neural networks differ from fully-connected networks for image classification tasks. Why are convolutions particularly well-suited to visual data?"}
+{"text": "Write a Bash script that monitors disk usage and sends an alert when any mounted filesystem exceeds 80% capacity."}
+{"text": "What is the role of a message broker in a microservices architecture? Compare Kafka and RabbitMQ in terms of use case suitability."}
+{"text": "Explain the concept of zero-shot and few-shot learning in large language models. How do prompting techniques enable these capabilities?"}
+{"text": "Describe the challenges of maintaining data consistency in a distributed system that uses eventual consistency. What strategies are commonly employed?"}
+{"text": "A healthcare application needs to store and process patient records while complying with HIPAA. What data governance and security measures would you implement?"}
+{"text": "What is the difference between horizontal and vertical scaling for web applications? What factors determine which approach is more appropriate?"}
+{"text": "Explain how transformer models handle variable-length input sequences, and describe the role of positional encoding in maintaining sequence information."}
