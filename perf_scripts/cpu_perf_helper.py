@@ -6,7 +6,7 @@ from argparse import ArgumentParser
 from typing import Iterable
 
 from cpu_perf_test import run_perf_test
-
+ 
 
 COUNTER_TYPES = {
     "memory": ("uncore_imc", "uncore memory", "imc", "umc", "dram", "mem"),

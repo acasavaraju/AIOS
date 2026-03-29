@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from argparse import ArgumentParser
 from collections import OrderedDict
 import shlex
 import subprocess
@@ -138,3 +139,38 @@ def run_perf_test(events: Sequence[str], duration_seconds: int = 5) -> int:
             return_code = completed.returncode
 
     return return_code
+
+
+def parse_cli_args() -> tuple[list[str], int]:
+    """Parse CLI arguments for manual perf test execution."""
+    parser = ArgumentParser(
+        description="Run grouped perf stat smoke tests for a set of events."
+    )
+    parser.add_argument(
+        "--events",
+        nargs="+",
+        required=True,
+        help="One or more perf event names to test manually.",
+    )
+    parser.add_argument(
+        "--duration",
+        type=int,
+        default=5,
+        help="Duration in seconds for the `sleep` workload. Default: 5.",
+    )
+
+    args = parser.parse_args()
+    if args.duration <= 0:
+        parser.error("--duration must be a positive integer")
+
+    return args.events, args.duration
+
+
+def main() -> int:
+    """CLI entrypoint for manual perf test execution."""
+    events, duration = parse_cli_args()
+    return run_perf_test(events, duration)
+
+
+if __name__ == "__main__":
+    sys.exit(main())
