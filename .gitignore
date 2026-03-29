@@ -1,0 +1,29 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Python tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments
+.venv/
+validation/.venv/
+.python-version
+.env
+.env.*
+
+# Generated outputs
+results/
+*.backup-*
+
+# Local model artifacts
+models/
+
+# Vendored external code
+llama.cpp/
+
+# OS/editor noise
+.DS_Store
