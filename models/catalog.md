@@ -48,3 +48,44 @@ python validation/compliance.py \
 3. Open a PR adding a row to this table. Attach compliance_report.json and baseline.json.
 
 Any model at any tier is welcome. AIOS Compatible entries showing what AIOS achieves on existing models without modification are valuable data.
+
+---
+
+## Baseline Measurements (Ground Truth)
+
+These measurements represent **unoptimized baseline inference** on CPU hardware using AIOS `baseline.py`.  
+They serve as the reference point for all projected and future validated reductions.
+
+### Falcon 7B (GGUF Q4_K_M)
+
+- **Hardware:** Intel Core Ultra 7 265K  
+- **OS:** Arch Linux  
+- **Kernel:** 6.19.10-zen1-1-zen  
+
+#### Measurement
+
+- **MB/token:** 2,340 ± 4 MB  
+  - CV: 0.17%  
+- **Tokens/sec:** 11.43 ± 0.05  
+- **Counter:** `uncore_imc_free_running_0/data_read/`  
+- **Runs:** 5 × 200 tokens  
+
+#### Notes
+
+- First validated AIOS baseline using uncore memory controller counters.
+- Measurement stability confirms MB/token as a reliable physical metric.
+- LLC counters unavailable due to conflict with IMC event.
+
+#### AIOS Projection (from Model Contract)
+
+- **Target MB/token:** 351–468 MB  
+- **Projected reduction:** 80–85%  
+
+#### Status
+
+This serves as the **ground truth baseline** for AIOS evaluation on this hardware.
+
+**Related Issue:** [#2]
+**Contributor:** @reimorster
+
+---
